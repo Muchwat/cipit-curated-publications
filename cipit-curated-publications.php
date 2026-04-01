@@ -127,7 +127,7 @@ add_shortcode('curated_publication', function ($atts) {
                                 <span class="card-date">/ <?php echo get_the_date('M j, Y'); ?></span>
                             </div>
                             <h2 class="card-title"><?php the_title(); ?></h2>
-                            <div class="card-description"><?php echo wp_trim_words(get_the_excerpt(), 35); ?></div>
+                            <div class="card-description"><?php echo wp_trim_words(get_the_excerpt(), 28); ?></div>
                         </div>
                         <div class="card-buttons">
                             <a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More <span>→</span></a>
