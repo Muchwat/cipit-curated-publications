@@ -88,7 +88,6 @@ add_shortcode('curated_publication', function ($atts) {
                     <div class="card-image-section">
                         <img src="<?php echo esc_url($img); ?>" class="card-image" alt="<?php the_title_attribute(); ?>">
                         <div class="card-image-overlay">
-                            <h3 class="card-overlay-title"><?php the_title(); ?></h3>
                             <?php if ($author || $disp_date): ?>
                                 <div class="card-meta">
                                     <?php if ($author): ?>
@@ -156,13 +155,6 @@ add_shortcode('curated_publication', function ($atts) {
         .card-image-section { width: 212px; min-width: 212px; position: relative; }
         .card-image { width: 100%; height: 100%; object-fit: cover; }
         .card-image-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to bottom, transparent, rgba(192, 33, 38, 0.95)); padding: 15px; color: #fff; }
-        .card-overlay-title {
-            font-size: 14px;
-            font-weight: 700;
-            margin-bottom: 5px;
-            line-height: 1.2;
-        }
-
         .card-content { padding: 2rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
         .card-category { color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 12px; }
         .card-category a { color: var(--primary-color); text-decoration: none; }
